@@ -1,7 +1,7 @@
 name: Staging # 워크플로의 이름
 on:
   push:
-    branches: [master] #스테이징 브런치에 푸시 발생 시 실행
+    branches: [main] #스테이징 브런치에 푸시 발생 시 실행
 jobs:
   staging: #deplay-staging이라는 작업
     name: demo # 작업의 이름
