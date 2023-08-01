@@ -1,7 +1,9 @@
 {
+  "taskDefinitionArn": "arn:aws:ecs:ap-northeast-1:500902511217:task-definition/demo:2",
   "containerDefinitions": [
     {
       "name": "demo",
+      "image": "500902511217.dkr.ecr.ap-northeast-1.amazonaws.com/demo:demo-8",
       "cpu": 0,
       "portMappings": [
         {
@@ -14,10 +16,8 @@
       ],
       "essential": true,
       "environment": [],
-      "environmentFiles": [],
       "mountPoints": [],
       "volumesFrom": [],
-      "ulimits": [],
       "logConfiguration": {
         "logDriver": "awslogs",
         "options": {
@@ -32,7 +32,7 @@
   "family": "demo",
   "executionRoleArn": "arn:aws:iam::500902511217:role/ecsTaskExecutionRole",
   "networkMode": "awsvpc",
-  "revision": 4,
+  "revision": 2,
   "volumes": [],
   "status": "ACTIVE",
   "requiresAttributes": [
@@ -70,7 +70,7 @@
     "cpuArchitecture": "X86_64",
     "operatingSystemFamily": "LINUX"
   },
-  "registeredAt": "2023-04-29T15:14:53.371Z",
-  "registeredBy": "arn:aws:iam::500902511217:user/maverick",
+  "registeredAt": "2023-08-01T13:38:35.100Z",
+  "registeredBy": "arn:aws:iam::500902511217:root",
   "tags": []
 }
